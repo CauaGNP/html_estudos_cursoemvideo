@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-principal: #83458F;
+    --cor-secundaria: #38235B;
+    --letras-header: white;
+    --letras-conteudo: #1E1E1E;
+    --poppins: "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 768px){
+    
+    header{
+        height: 10vh;
+
+        transition: width .3s, height .3s;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+   span#menubotao{
+        display: none;
+   }
+
+    menu{
+        display: block;
+        position:static;
+        background-color: var(--cor-principal);
+   }
+   ol{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   }
+
+   menu > ol > li > a{
+    color: var(--letras-header);
+    margin-right: 15px ;
+    }
+
+    menu > ol > li > a:hover{
+        background-color: rgba(255, 255, 255, 0);
+        text-decoration: underline;
+    }
+    li{
+        list-style-type: none;
+    }
+
+   hr{
+    display: none;
+   }
+
+   #texto-promocao{
+    font-size: 20px;
+   }
+
+   div#promocoes{
+    width: 94vw;
+    height: 25vh;
+
+    transition: width .3s, height .1s;
+    transition-timing-function: ease;
+   }
+
+   #mais-vendidos{
+    font-size: 20px;
+   }
+
+   .produto1{
+    margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 993px){
+    
+    div#promocoes{
+        height: 35vh;
+    }
+
+    .produto1{
+        width: 200px;
+        height: 200px;
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style-tabelas/login.css">
+    <link rel="stylesheet" href="../style-tabelas/media-query-form.css">
+</head>
+<body>
+    <section class="formulario">
+        <img src="../images/imagem-.png" alt="" class="imagem-lado">
+        <div class="pai">
+            <div id="titulo-e-subtitulo">
+                <h1>RECUPERAR SENHA</h1>
+                <h2>Siga os procedimentos para a recuperação de sua senha</h2>
+            </div>
+            <form action="">
+                <div class="forms">
+                    <label for="iemail">Email de recuperação:</label>
+                    <br>
+                    <input type="email" name="email" id="iemail" required class="box-form" placeholder="Digite o email de recuperação">
+                </div>
+                <div class="forms">
+                    <label for="icodigarecuperacao">Digite o códido de recuperação:</label>
+                    <br>
+                    <input type="number" name="codigorecuperacao" id="iemail" required class="box-form" placeholder="Digite o codigo de recuperação">
+                </div>
+                <div class="forms">
+                    <label for="inovasenha">Nova senha:</label> <br>
+                    <input type="password" name="novasenha" id="inovasenha" class=box-form requied minlength="8" maxlength ="20" placeholder="Digite sua nova senha">
+                </div>
+                <div class="forms" id="mudar-senha">
+                     <a href="../index.html" id="mudar-senha-botao"> Mudar senha</a>
+                </div>
+            </form>
+                <p id="paragrafocontainer"><a id="reenviar-codigo"href="esqueci-senha.html">Reenviar código</a></p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Login</title>
+    <link rel="stylesheet" href="../style-tabelas/login.css">
+    <link rel="stylesheet" href="../style-tabelas/media-query-form.css">
+</head>
+<body>
+    <section class="formulario">
+        <img src="../images/imagem-.png" alt="" class="imagem-lado">
+        <div class="pai">
+            <div id="titulo-e-subtitulo">
+                <h1>LOGIN</h1>
+                <h2>Seja bem vindo ao nosso site efetue o login para prosseguir</h2>
+            </div>
+            <form action="">
+                <div class="forms">
+                    <label for="inome">Nome:</label>
+                    <br>
+                    <input type="text" name="nome" id="inome" required class="box-form" placeholder="Digite seu nome de usuário">
+                </div>
+                <div class="forms">
+                    <label for="isenha">Senha:</label> <br>
+                    <input type="password" name="senha" id="isenha" class=box-form requied minlength="8" maxlength ="20" placeholder="Digite sua senha">
+                </div>
+                <div class="forms" id="esquecer-confirmar">
+                     <a href="esqueci-senha.html" id="esqueceu-senha">Esqueceu a senha? </a>
+                     <a href="../index.html" id="confirmar"> Confirmar</a>
+                </div>
+            </form>
+                <div id="imagens">
+                    <img src="../images/facebook.png" alt="">
+                    <img src="../images/google.png" alt="">
+                    <img src="../images/apple.png" alt="">
+                </div>
+                <p id="clique-aqui">Não tem uma conta?<a href="cadastro.html">Clique aqui!!</a></p>
+        </div>
+    </section>
+</body>
+</html>
